@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="fa">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>تماس با رُستینو</title>
+<link href="./css/style.css" rel="stylesheet"/>
+<meta content="#241810" name="theme-color"/></head>
+<body>
+<header>
+<div class="logo">
+<a href="./index.html">رُستینو</a>
+</div>
+<div class="header-text">
+<h1>تماس با رُستینو</h1>
+<p>خوشحال می‌شیم با ما در ارتباط باشید</p>
+</div>
+</header>
+<nav>
+<ul>
+<li><a href="./index.html">خانه</a></li>
+<li><a href="./menu.html">منو</a></li>
+<li><a href="./coffee.html">قهوه‌های رُستینو</a></li>
+<li><a href="./about.html">درباره ما</a></li>
+<li><a href="./gallery.html">گالری</a></li>
+<li><a aria-current="page" href="./contact.html">تماس با ما</a></li>
+</ul>
+</nav>
+<main>
+<section class="contact-hero">
+<div class="contact-hero-content">
+<span>CONTACT ROSTINO</span>
+<h2>با ما در ارتباط باشید</h2>
+<p>
+                برای سفارش، رزرو میز یا هر سوالی که دارید
+                با ما تماس بگیرید.
+            </p>
+</div>
+</section>
+<section class="contact-page">
+<div class="section-title">
+<span>GET IN TOUCH</span>
+<h2>راه‌های ارتباطی</h2>
+<p>
+                ما همیشه آماده شنیدن صدای شما هستیم.
+            </p>
+</div>
+<div class="contact-container">
+<div class="contact-info">
+<div class="contact-box">
+<div class="contact-icon">📍</div>
+<div>
+<h3>آدرس کافه</h3>
+<p>
+                            تبریز، خیابان نمونه،
+                            کافه رُستینو
+                        </p>
+</div>
+</div>
+<div class="contact-box">
+<div class="contact-icon">📞</div>
+<div>
+<h3>تلفن</h3>
+<p>
+                            ۰۴۱-۱۲۳۴۵۶۷۸
+                        </p>
+</div>
+</div>
+<div class="contact-box">
+<div class="contact-icon">✉</div>
+<div>
+<h3>ایمیل</h3>
+<p>
+                            info@rostino.ir
+                        </p>
+</div>
+</div>
+<div class="contact-box">
+<div class="contact-icon">◷</div>
+<div>
+<h3>ساعات کاری</h3>
+<p>
+                            هر روز از ۹ صبح تا ۱۱ شب
+                        </p>
+</div>
+</div>
+</div>
+<div class="contact-form">
+<h2>پیام خود را برای ما ارسال کنید</h2>
+<form novalidate="">
+<div class="form-group">
+<label for="name">
+                            نام و نام خانوادگی
+                        </label>
+<input id="name" name="name" placeholder="نام خود را وارد کنید" required="" type="text"/>
+</div>
+<div class="form-group">
+<label for="phone">
+                            شماره تماس
+                        </label>
+<input id="phone" name="phone" placeholder="۰۹۱۲..." required="" type="tel"/>
+</div>
+<div class="form-group">
+<label for="email">
+                            ایمیل
+                        </label>
+<input autocomplete="email" id="email" name="email" placeholder="example@email.com" required="" type="email"/>
+</div>
+<div class="form-group">
+<label for="message">
+                            پیام شما
+                        </label>
+<textarea id="message" name="message" placeholder="پیام خود را بنویسید..." required="" rows="6"></textarea>
+</div>
+<button type="submit">
+                        ارسال پیام
+                    </button>
+</form>
+</div>
+</div>
+</section>
+<section class="contact-map">
+<div class="map-placeholder">
+<span>ROSTINO LOCATION</span>
+<h2>رُستینو کجاست؟</h2>
+<p>
+                نقشه و موقعیت دقیق کافه در این بخش قرار می‌گیرد.
+            </p>
+</div>
+</section>
+</main>
+<footer>
+<div class="footer-container">
+<div class="footer-about">
+<h3>رُستینو</h3>
+<p>
+                جایی برای قهوه، آرامش و لحظه‌های خوب.
+            </p>
+</div>
+<div class="footer-links">
+<h3>دسترسی سریع</h3>
+<a href="./index.html">خانه</a>
+<a href="./menu.html">منو</a>
+<a href="./coffee.html">قهوه‌های رُستینو</a>
+<a href="./about.html">درباره ما</a>
+<a href="./gallery.html">گالری</a>
+<a href="./contact.html">تماس با ما</a>
+</div>
+<div class="footer-contact">
+<h3>ارتباط با ما</h3>
+<p>📍 تبریز، خیابان نمونه</p>
+<p>📞 ۰۴۱-۱۲۳۴۵۶۷۸</p>
+<p>✉ info@rostino.ir</p>
+</div>
+</div>
+<div class="footer-bottom">
+<p>
+            © ۱۴۰۵ کافه رُستینو — تمامی حقوق محفوظ است.
+        </p>
+</div>
+</footer>
+<script>
+(function () {
+  const nav = document.querySelector('nav');
+  if (nav) {
+    const toggle = document.createElement('button');
+    toggle.className = 'menu-toggle';
+    toggle.type = 'button';
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.setAttribute('aria-controls', 'site-navigation');
+    toggle.setAttribute('aria-label', 'باز کردن منو');
+    toggle.innerHTML = '<span></span><span></span><span></span>';
+    nav.prepend(toggle);
+    const list = nav.querySelector('ul');
+    if (list) {
+      list.id = 'site-navigation';
+      toggle.addEventListener('click', function () {
+        const open = nav.classList.toggle('nav-open');
+        toggle.setAttribute('aria-expanded', String(open));
+        toggle.setAttribute('aria-label', open ? 'بستن منو' : 'باز کردن منو');
+      });
+      list.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          nav.classList.remove('nav-open');
+          toggle.setAttribute('aria-expanded', 'false');
+          toggle.setAttribute('aria-label', 'باز کردن منو');
+        });
+      });
+    }
+  }
+
+  const galleryItems = document.querySelectorAll('.gallery-photo');
+  if (galleryItems.length) {
+    const lightbox = document.createElement('div');
+    lightbox.className = 'lightbox';
+    lightbox.setAttribute('role', 'dialog');
+    lightbox.setAttribute('aria-modal', 'true');
+    lightbox.setAttribute('aria-label', 'نمایش تصویر');
+    lightbox.innerHTML = '<button class="lightbox-close" type="button" aria-label="بستن">×</button><button class="lightbox-prev" type="button" aria-label="تصویر قبلی">‹</button><img class="lightbox-image" alt=""><button class="lightbox-next" type="button" aria-label="تصویر بعدی">›</button>';
+    document.body.appendChild(lightbox);
+    const image = lightbox.querySelector('.lightbox-image');
+    let current = 0;
+    let lastFocused = null;
+    function show(index) {
+      current = (index + galleryItems.length) % galleryItems.length;
+      const source = galleryItems[current].querySelector('img');
+      image.src = source.currentSrc || source.src;
+      image.alt = source.alt || 'تصویر گالری رستینو';
+    }
+    function open(index) {
+      lastFocused = document.activeElement;
+      show(index);
+      lightbox.classList.add('is-open');
+      document.body.classList.add('lightbox-open');
+      lightbox.querySelector('.lightbox-close').focus();
+    }
+    function close() {
+      lightbox.classList.remove('is-open');
+      document.body.classList.remove('lightbox-open');
+      if (lastFocused) lastFocused.focus();
+    }
+    galleryItems.forEach(function (item, index) {
+      item.setAttribute('role', 'button');
+      item.setAttribute('tabindex', '0');
+      item.addEventListener('click', function (e) { e.preventDefault(); open(index); });
+      item.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(index); } });
+    });
+    lightbox.querySelector('.lightbox-close').addEventListener('click', close);
+    lightbox.querySelector('.lightbox-prev').addEventListener('click', function () { show(current - 1); });
+    lightbox.querySelector('.lightbox-next').addEventListener('click', function () { show(current + 1); });
+    lightbox.addEventListener('click', function (e) { if (e.target === lightbox) close(); });
+    document.addEventListener('keydown', function (e) {
+      if (!lightbox.classList.contains('is-open')) return;
+      if (e.key === 'Escape') close();
+      if (e.key === 'ArrowLeft') show(current + 1);
+      if (e.key === 'ArrowRight') show(current - 1);
+    });
+  }
+
+  const form = document.querySelector('.contact-form form');
+  if (form) {
+    const status = document.createElement('p');
+    status.className = 'form-status';
+    status.setAttribute('role', 'status');
+    form.appendChild(status);
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      status.textContent = '';
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+      status.textContent = 'پیام شما با موفقیت آماده شد. برای ارسال واقعی، فرم را به سرویس یا بک‌اند خود متصل کنید.';
+      status.classList.add('success');
+    });
+  }
+})();
+</script></body>
+</html>
